@@ -1,0 +1,21 @@
+{
+  "name": "xyzpdq",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "eslint lib test",
+    "test": "jest",
+    "start": "jest --watch"
+  },
+  "dependencies": {
+    "bitgeo": "^0.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2",
+    "eslint-config-tschaub": "^6.0.0",
+    "jest": "^17.0.3"
+  },
+  "eslintConfig": {
+    "extends": "tschaub"
+  }
+}
