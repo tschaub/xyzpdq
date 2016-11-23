@@ -12,13 +12,13 @@ describe('Lookup', () => {
     });
   });
 
-  describe('#intersectsCoord()', () => {
+  describe('#intersects()', () => {
     it('returns true for a tile coord hit', () => {
       const lookup = new Lookup({
         type: 'Point',
         coordinates: [0, 0]
       });
-      expect(lookup.intersectsCoord(0, 0, 0)).toBe(true);
+      expect(lookup.intersects(0, 0, 0)).toBe(true);
     });
 
     it('returns false for a tile coord miss', () => {
@@ -26,7 +26,7 @@ describe('Lookup', () => {
         type: 'Point',
         coordinates: [0, 0]
       });
-      expect(lookup.intersectsCoord(0, 1, 0)).toBe(false);
+      expect(lookup.intersects(0, 1, 0)).toBe(false);
     });
   });
 
