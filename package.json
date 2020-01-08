@@ -1,6 +1,6 @@
 {
   "name": "xyzpdq",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint lib test",
@@ -23,5 +23,7 @@
   "eslintConfig": {
     "extends": "tschaub"
   },
-  "files": ["lib/**/*.js"]
+  "files": [
+    "lib/**/*.js"
+  ]
 }
