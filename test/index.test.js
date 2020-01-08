@@ -2,7 +2,6 @@ const Lookup = require('../lib/lookup');
 const xyzpdq = require('../lib');
 
 describe('xyzpdq()', () => {
-
   it('creates a new lookup', () => {
     const lookup = xyzpdq({
       type: 'Point',
@@ -10,11 +9,9 @@ describe('xyzpdq()', () => {
     });
     expect(lookup).toBeInstanceOf(Lookup);
   });
-
 });
 
 describe('containsBbox()', () => {
-
   it('determines if a bbox is outside', () => {
     const lookup = xyzpdq({
       type: 'Point',
@@ -35,10 +32,15 @@ describe('containsBbox()', () => {
     const lookup = xyzpdq({
       type: 'Polygon',
       coordinates: [
-        [[-180, -90], [180, -90], [180, 90], [-180, 90], [-180, -90]]
+        [
+          [-180, -90],
+          [180, -90],
+          [180, 90],
+          [-180, 90],
+          [-180, -90]
+        ]
       ]
     });
     expect(lookup.containsBbox([-10, -10, 10, 10], 2)).toEqual(xyzpdq.ALL);
   });
-
 });

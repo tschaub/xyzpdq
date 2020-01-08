@@ -1,7 +1,6 @@
 const Lookup = require('../lib/lookup');
 
 describe('Lookup', () => {
-
   describe('constructor', () => {
     it('creates a new lookup', () => {
       const lookup = new Lookup({
@@ -29,5 +28,4 @@ describe('Lookup', () => {
       expect(lookup.intersects(0, 1, 0)).toBe(false);
     });
   });
-
 });
