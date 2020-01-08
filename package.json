@@ -22,5 +22,6 @@
   },
   "eslintConfig": {
     "extends": "tschaub"
-  }
+  },
+  "files": ["lib/**/*.js"]
 }
