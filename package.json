@@ -1,6 +1,6 @@
 {
   "name": "xyzpdq",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "eslint lib test",
